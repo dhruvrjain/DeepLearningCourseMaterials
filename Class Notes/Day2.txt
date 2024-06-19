@@ -1,0 +1,63 @@
+ML:
+Steps of an ML project:
+	1. Look atthe big picture.
+	2. Get the data
+	3. Explore and visualize to gain insights
+	4. Prepare data for ML lgo
+	5. Select a model and train
+	6. Fine tune your model
+	7. Present your soution
+	8. Launch, monitor and maintain system
+
+
+Eg: House price prediction (multivariate regression problem)
+	Variates: Longitude, Latitude, No. of Inhabitants, Avg income of the people, ocean proximity
+
+Important terminologies:
+
+	Error measuring: Root mean square error
+
+	Check assumptions: Verify the assumptions made by you.
+	Quartiles and percentiles
+
+Visualization:
+	scatter_matrix: from pandas.plotting
+
+ClusteringSimple, DecisionTreeClassifier, Naive Bayesian, Random forest
+
+
+
+Chap 3: (ML Classification)
+- MNIST Dataset (from sklearn.datasets import fetch_openml)
+- SGDClassifier (Stochastic Gradient Descent)(Binary classification:- True or False)
+- Model Evaluation:- cross_val_score() 
+- Confusion matrix: A 2x2 matrix to measure the performance of the model
+
+[ True -ve's       False +ve's
+  False -ve's       True +ve's ]
+
+True - refers to the predictions correctly made by the model.
+False - refers to the predictions incorrectly made by the model.
+
++ves and -ves are value neutral.
+
+Precision and Recall (Measures using the values of the confusion matrix)
+
+Visualize it using the precision_recall_curve() (from sklearn.metrics import precision_recall_curve)
+
+
+ROC Curve - another common tool used with binary classifier ( Similar to the precision vs Recall curve but instead of precision and recall values, it plots true positive rate vs false positive rate. ) (roc_curve())
+
+
+
+Multiclass classifiers:
+-----------------------
+
+-> One way is to train 10 binary classifiers, one for each digit ( 0 to 9 )
+-> Another way is to train all possible OvO classifiers (One vs One classifiers where each classifier compares two numbers and performs binary classification)
+-> One vs the Rest (OvR)
+-> SVC (Support Vector  Classifier)
+
+Confusion matrix in multi class classifiers consist of a ((n x n) matrix where n refers to the number of classes)
+
+-> Multilabel classifiers, Multioutput classifiers
