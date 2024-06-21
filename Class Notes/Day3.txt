@@ -1,0 +1,58 @@
+Variation vs Disciminant Analysis:
+----------------------------------
+DA:
+
+Covariance - decribes one way in which two features are related (or not related to each other)
+
+Variance vs Covariance- The variation of a feature from it's mean is known as variance, whereas the covariance is a comparison of two different features.
+
+Four variations of DA:
+- QDA : Assumes that covariances between different features are unconstrained
+- LDA : 
+- GNB : Assumes that covariances between distinct features are all zero
+- DLDA : Combines LDA and GNB
+
+
+
+
+
+Support Vector Machines:
+------------------------
+- A powerful and versatile ML model capable of Linear or Non-Linear classification, regression and even novelty detection.
+- Suitable for small to medium-sized non-linear datasets. (Not scalable for large datasets)
+- Linear SVM Classification: Two classes can be separated with a single straight line (linearly seperable).
+- SVMs are sensitive to feature scales. ( StandardScaler is used to better adapt to feature scaling
+
+Gaussian RBF kernel
+
+
+
+
+
+Decision trees:
+---------------
+- One of the most powerful classifiers in today's time.
+- Visualize decision trees using 'graphiz' module. (grapphiz.Source.from_file())
+- In simpler words, it is like an if-then-else binary tree where the leaf nodes are conclusions(classes) and each inner node is a decision (condition). The decision proceeds from the root node to the leaves.
+- Trained using the CART training algorithm.
+- Finding the optimal tree is a NP complete problem.
+- By default, DTC uses Gini impurity measure, but entropy impurity measure can also be selected.
+- To overcome overfitting we can set some regularization parameters (like restricting the depth of the decision tree to make it simple but good enough)
+- Can be both Regressor and Classifier.
+
+
+
+
+Ensemble:
+---------
+- Wisdom of the crowd (Question asked to thousands of random people, aggregate their answers)
+- In many cases it is better than the answer of an expert.
+- A group of predictors (regressors or classifiers)
+
+Ensemble
+  |
+   - > VotingClassifier - Hard, Soft voting
+  |
+   - > RandomForestClassifer
+  |
+   - > BaggingClassifier

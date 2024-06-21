@@ -61,3 +61,8 @@ Multiclass classifiers:
 Confusion matrix in multi class classifiers consist of a ((n x n) matrix where n refers to the number of classes)
 
 -> Multilabel classifiers, Multioutput classifiers
+
+
+Inductive learning:
+-------------------
+-> The goal is to generalize the data with a limited set of training data.
